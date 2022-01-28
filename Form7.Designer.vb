@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Checkout
+Partial Class Form7
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -30,6 +30,7 @@ Partial Class Checkout
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -98,11 +99,11 @@ Partial Class Checkout
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(161, 226)
+        Me.Button2.Location = New System.Drawing.Point(122, 225)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 41
-        Me.Button2.Text = "Selesai"
+        Me.Button2.Text = "Batal"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'NumericUpDown1
@@ -114,11 +115,21 @@ Partial Class Checkout
         Me.NumericUpDown1.Size = New System.Drawing.Size(202, 23)
         Me.NumericUpDown1.TabIndex = 42
         '
-        'Checkout
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(203, 225)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 43
+        Me.Button3.Text = "Selesai"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(395, 276)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox2)
@@ -127,7 +138,7 @@ Partial Class Checkout
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label6)
-        Me.Name = "Checkout"
+        Me.Name = "Form7"
         Me.Text = "Checkout"
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -143,4 +154,5 @@ Partial Class Checkout
     Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents Button3 As Button
 End Class

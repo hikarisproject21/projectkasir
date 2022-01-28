@@ -22,7 +22,6 @@ Partial Class Form6
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -32,15 +31,10 @@ Partial Class Form6
         Me.Button8 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ListViewOutput = New System.Windows.Forms.ListView()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Label2 = New System.Windows.Forms.Label()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(172, 69)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(202, 23)
-        Me.TextBox5.TabIndex = 33
         '
         'Label6
         '
@@ -121,11 +115,30 @@ Partial Class Form6
         '
         'ListViewOutput
         '
+        Me.ListViewOutput.FullRowSelect = True
         Me.ListViewOutput.Location = New System.Drawing.Point(32, 143)
         Me.ListViewOutput.Name = "ListViewOutput"
         Me.ListViewOutput.Size = New System.Drawing.Size(342, 122)
         Me.ListViewOutput.TabIndex = 39
         Me.ListViewOutput.UseCompatibleStateImageBehavior = False
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(172, 71)
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(202, 23)
+        Me.NumericUpDown1.TabIndex = 40
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(40, 108)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(41, 15)
+        Me.Label2.TabIndex = 41
+        Me.Label2.Text = "Label2"
         '
         'Form6
         '
@@ -133,24 +146,24 @@ Partial Class Form6
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(406, 370)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.ListViewOutput)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form6"
         Me.Text = "Form6"
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Label4 As Label
@@ -160,4 +173,6 @@ Partial Class Form6
     Friend WithEvents Button8 As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ListViewOutput As ListView
+    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents Label2 As Label
 End Class
