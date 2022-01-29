@@ -18,10 +18,15 @@ Public Class Form2
             textpass.Clear()
             textuser.Focus()
         Else
-            Me.Visible = False
-            Form3.Show()
-
-
+            If dr(3) = "1" Then
+                Me.Visible = False
+                Form3.Show()
+            ElseIf dr(3) = "2" Then
+                MsgBox("Login gagal, hanya admin yang boleh masuk")
+                textuser.Clear()
+                textpass.Clear()
+                textuser.Focus()
+            End If
         End If
         Call diskonek()
     End Sub

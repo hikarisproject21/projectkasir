@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form6
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form6
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -32,7 +32,6 @@ Partial Class Form6
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ListViewOutput = New System.Windows.Forms.ListView()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -131,22 +130,12 @@ Partial Class Form6
         Me.NumericUpDown1.TabIndex = 40
         Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 108)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 15)
-        Me.Label2.TabIndex = 41
-        Me.Label2.Text = "Label2"
-        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(406, 370)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.ListViewOutput)
         Me.Controls.Add(Me.ComboBox1)
@@ -174,5 +163,4 @@ Partial Class Form6
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ListViewOutput As ListView
     Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents Label2 As Label
 End Class
